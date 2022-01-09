@@ -4,7 +4,7 @@
   "States" : {
     "BookHotelState": {
      "Type": "Task",
-     "Resource": "arn:aws:region:accountId:function:BookHotelClient:$LATEST",
+     "Resource": "arn:aws:lambda:region:accountId:function:BookHotelClient:$LATEST",
      "Parameters": {
        "buyer_id.$": "$.purchase.buyer_id",
        "start_date.$": "$.hotel.start_date",
